@@ -1,0 +1,117 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Area tecnica</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="../css/default.css" rel="stylesheet" type="text/css" />
+	<link href="../css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+	</head>
+	<body>
+	<div id="header">
+	<center><h1>Help Desk</h1></center>
+	</div>
+	<!-- end #header -->
+	<div id="menu-wrapper">
+		<div id="menu" style="align: left;">
+			<ul >
+				<li class="current_page_item"><a href="tecnica.html">Home</a></li>
+				<li><a href="../index.html" >Sair</a></li>
+			
+		</div>
+	</div>
+	<!-- end #menu -->
+	<div id="content">
+	<div id="posts">
+		<div class="post">
+			<center><h1 class="title" style="font-size:300%">Area tecnica</h1><center>
+			<div class="story">
+			
+		<br><br><br> <table id="customers">
+	<tr>
+    <th >Codigo</th>
+    <th >Nome</th>
+	<th>Email</th>
+	<th>Data/Hora<br>Inicio</th>
+	<th>Mensagem</th>
+	<th>Status</th>
+	<th>Prioridade</th>
+	<th>Situação</th>
+	<th>Data/Hora<br>termino</th>
+	<th>tecnico</th>
+  </tr>
+	<tr >
+	<td id="add" style="width:3%;" ></td>
+	<td id="add1" style="width:13%;"></td>
+	<td id="add2" style="width:13%;"></td>
+	<td id="add4" style="width:9%;" ></td>
+	<td id="add3"  ></td>
+	<td id="add5" style="width:5%;"></td>
+	<td id="add6" style="width:5%;" ></td>
+	<td id="add7" style="width:5%;" ></td>
+	<td id="add8" style="width:9%;" ></td>
+	<td id="add9" style="width:9%;" ></td>
+	</tr>
+	</table><br><br>
+			
+	<div style="border-bottom: 4px solid #EA5A4B;"></div>
+
+	<section class="newsletter">
+	<br><p style="font-size:120%; color:black; text-align: center;"><strong>Registro do tecnico</strong></p>
+	<input  type="text" placeholder="Digite o codigo.." id="cod_fild" />
+	<input  type="text" placeholder="Digite o nome.." id="nom_fild" />
+	<select id="status_field" name="country">
+	  <option value="">Status</option>
+	  <option value="Aberto">Aberto</option>
+	  <option value="Andamento">Em andamento</option>
+	  <option value="Concluído">Concluído</option>
+	</select>
+<input type="text" placeholder="dd/mm/yy" id="calendario_fild" /><input type="time"  id="horas_fild"><br><br>
+<button id "update" onclick="altera()">Enviar</button><br>
+
+	<br><p style="font-size:120%; color:black; text-align: center;"><strong>Excluir ticket</strong></p>
+	<input  type="text" placeholder="Digite o codigo.." id="exclui" />
+	<button id "excluir" onclick="exclui()">Excluir</button>
+	</section>	
+
+			</div>		
+		</div>
+		<div class="post">
+			<div class="story">
+			
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- end #posts -->
+
+	<!-- end #links -->
+	<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #content -->
+	<div id="footer">
+	<p id="legal">@ Help Desk</p>
+	</div>
+	<!-- end #footer -->
+
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDCi-3JJf9NQRHkZoGmlzdVsbDr3Zvd68E",
+    authDomain: "bompreco-4a4ac.firebaseapp.com",
+    databaseURL: "https://bompreco-4a4ac.firebaseio.com",
+    projectId: "bompreco-4a4ac",
+    storageBucket: "",
+    messagingSenderId: "878701331617"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+	<script src="../js/tecnica.js"></script>
+	</body>
+	</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Usuario</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="../css/default.css" rel="stylesheet" type="text/css" />
+	<link href="../css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+	</head>
+	<body>
+	<div id="header">
+	<center><h1>Help Desk</h1></center>
+	</div>
+	<!-- end #header -->
+	<div id="menu-wrapper">
+		<div id="menu" style="align: left;">
+			<ul >
+				<li class="current_page_item"><a href="usuario.html">Home</a></li>
+				<li><a href="usuarioMensa.html" >Ticket cadastrado</a></li>
+				<li><a href="../index.html" >Sair</a></li>
+			
+		</div>
+	</div>
+	<!-- end #menu -->
+	<div id="content">
+	<div id="posts">
+		<div class="post">
+			<center><h1 class="title" style="font-size:300%">Usuario</h1><center><br><br>
+			<div class="story">
+			
+		
+			
+	<div class="container" style="border:1px solid #ccc">
+	<h3  style="color:black;font-size:12px;" ><strong>Por favor, preencha este formulário para criar um ticket.</strong></h3><br>
+   <br> <h2 style="color:black;float:left;padding-left:10px;font-size:15px;">Nome</h2>
+    <input type="text" placeholder="Enter Nome" id="nome_usuario" style="text-transform: capitalize"><br>
+
+    <h2 style="color:black;float:left;padding-left:10px;font-size:15px;">Email</h2>
+    <input type="text" placeholder="Enter Email" id="email_usuario" >
+	
+	<h4 style="color:black;">Data: <input type="text" placeholder="dd/mm/yy" id="calendario" /> Horas: <input type="time" id="horas"> </h4><br>
+ 
+	<h2 style="color:black;float:left;padding-left:10px;font-size:15px;">Mensagem</h2>
+	<textarea rows="6" cols="150"  name="mensagem" id="mensa_usuario" style="text-transform: capitalize"> </textarea><br>
+    <center> <button id="envia_btn" onclick="enviar()"><strong>Enviar</strong></button> </center>
+  </div>
+
+			</div>		
+		</div>
+		<div class="post">
+			<div class="story">
+			
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- end #posts -->
+
+	<!-- end #links -->
+	<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #content -->
+	<div id="footer">
+	<p id="legal">@ Help Desk</p>
+	</div>
+	<!-- end #footer -->
+
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDCi-3JJf9NQRHkZoGmlzdVsbDr3Zvd68E",
+    authDomain: "bompreco-4a4ac.firebaseapp.com",
+    databaseURL: "https://bompreco-4a4ac.firebaseio.com",
+    projectId: "bompreco-4a4ac",
+    storageBucket: "",
+    messagingSenderId: "878701331617"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+	<script src="../js/usuario.js"></script>
+	</body>
+	</html>
